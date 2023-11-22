@@ -1,25 +1,16 @@
-# Get started
-
-1. Make sure you are using python 2.7
-
+# Setup virtual environment and dependencies
 ```bash
-python --version
+python -m venv .venv
+source .venv.bin/activate
+pip install -r requirements.txt
 ```
-
-2. (Optional) Set up the appropriate virtual environment:
-
-```bash
-mkvirtualenv scrabble-python-interview
-workon scrabble-python-interview
-```
-
-3. Install the dependencies
+# Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-# Run the tests
+# Run tests
 
 ```bash
 python tests.py
@@ -27,6 +18,8 @@ python tests.py
 
 # Files
 
-- tests.py: You will need to comment out tests as you go once you get the previous ones to pass.
-- scrabble.py: Where you need to implement the game's logic to make the tests pass.
-- dictionary.py: Helper to test if a word is valid.
+- tests.py: Tests.
+- scrabble.py: Game logic.
+- dictionary.py: valid words
+
+  
